@@ -1,0 +1,18 @@
+NAME - mvc2_db
+
+CREATE TABLE games (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    gamename VARCHAR(255) NOT NULL,
+    author VARCHAR(100) NOT NULL,
+    price VARCHAR(100) NOT NULL,
+    description VARCHAR(1000) NOT NULL,
+    image VARCHAR(255)
+);
+
+INSERT INTO games (gamename, author, price, description, image) VALUES 
+('HTML and CSS', 'Jon Duckett', '17.19$', 'Every day, more and more people want to learn HTML and CSS.', 'HTMLandCSS_Duckett.jpg'),
+('HTML5', 'Mathew MacDonald', '27.65$', 'HTML5 is more than a markup language.', 'HTML5TheMissing_MacDonald.jpg'),
+('Head First HTML5 Programming', 'Eric Freeman, Elisabeth Robson', '35.35$', 'HTML has been on a wild ride.', 'HeadFirstHTML5.jpg'),
+('Head First JavaScript Programming', 'Eric Freeman, Elisabeth Robson', '37.60$', 'This brain-friendly guide teaches you everything from JavaScript language.', 'HeadFirstJavaScript.jpg'),
+('JQuery In Action', 'Bear Bibeault, Yehuda Katz', '32.12$', 'A really good web development framework anticipates your needs.', 'JQueryInAction.jpg');
+
