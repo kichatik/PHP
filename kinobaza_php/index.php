@@ -3,6 +3,11 @@ include_once 'model/Model.php';
 include_once 'controller/controller.php';
 include_once 'route/routing.php';
 
-// Output the response (content)
+// Start the controller and get the response
+$response = Controller::StartSite();
+
+
+
 echo $response;
-?>
+
+ ?>
